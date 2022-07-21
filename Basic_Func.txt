@@ -3,3 +3,33 @@ git에서 저장되는 것을 원격 지 리포지털이라고 한다.
 
 ///////////////////////////////////////////////////////
 넣는 방법은 CMD창에서 GIT파일이 있는 곳으로 이동한다.
+>>>
+C:\Users\ssk\Desktop\git_test>cd Git_test
+
+C:\Users\ssk\Desktop\git_test\Git_test>git add document.txt
+fatal: pathspec 'document.txt' did not match any files
+
+C:\Users\ssk\Desktop\git_test\Git_test>git add Basic Thing
+fatal: pathspec 'Basic' did not match any files
+
+C:\Users\ssk\Desktop\git_test\Git_test>git add Basic Thing.txt
+fatal: pathspec 'Basic' did not match any files
+
+C:\Users\ssk\Desktop\git_test\Git_test>git add Basic_Func.txt
+
+C:\Users\ssk\Desktop\git_test\Git_test>git commit -m "Add Text File [Basic_Func.txt]"
+[main (root-commit) de70644] Add Text File [Basic_Func.txt]
+ 1 file changed, 5 insertions(+)
+ create mode 100644 Basic_Func.txt
+
+C:\Users\ssk\Desktop\git_test\Git_test>git push
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 394 bytes | 394.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/ssk450/Git_test.git
+ * [new branch]      main -> main
+
+위와 같은 상태창과 명령어를 확인할 수 있다.
